@@ -1,0 +1,3 @@
+[submodule "Board-Secret"]
+	path = Board-Secret
+	url = https://github.com/honolhy/Board-Secret.git
