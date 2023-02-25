@@ -14,6 +14,14 @@ configurations {
 	}
 }
 
+task copyPrivate(type: Copy) {
+	copy {
+		from './Board-Secret'         // 서브모듈의 폴더
+		include "*.yml"               // 포함할 파일
+		into 'src/main/resources'     // 빌드시에 넣을 경로
+	}
+}
+
 repositories {
 	mavenCentral()
 }
